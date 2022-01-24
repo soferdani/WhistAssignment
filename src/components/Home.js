@@ -20,7 +20,7 @@ export default function Home() {
 	}, []);
 
 	const fetchItems = async () => {
-        let data = await axios.get("http://localhost:8888/bringAllProductsToSale");
+        let data = await axios.get("http://localhost:5000/bringAllProductsToSale");
         setItemsToSales(data.data);
 	};
 
@@ -40,8 +40,8 @@ export default function Home() {
                     image: item.image,
                     description: item.description,
                 }; 
-                await axios.post('http://localhost:8888/addItemToSoledItems', jsonToSend);
-                await axios.delete(`http://localhost:8888/deleteItemFromSale/${item._id}`);
+                await axios.post('http://localhost:5000/addItemToSoledItems', jsonToSend);
+                await axios.delete(`http://localhost:5000/deleteItemFromSale/${item._id}`);
             })
         ).then(() => { 
             fetchItems();

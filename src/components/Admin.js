@@ -31,12 +31,12 @@ export default function Admin() {
 	}, []);
 
 	const fetchItems = async () => {
-		let data = await axios.get("http://localhost:8888/bringAllProductsToSale");
+		let data = await axios.get("http://localhost:5000/bringAllProductsToSale");
 		setItemsToSales(data.data);
 	};
 
 	const handleRemoveItem = async (id) => {
-		await axios.delete(`http://localhost:8888/deleteItemFromSale/${id}`);
+		await axios.delete(`http://localhost:5000/deleteItemFromSale/${id}`);
 		fetchItems();
 	};
 
@@ -52,7 +52,7 @@ export default function Admin() {
 				image: itemImage,
 				description: itemDescription,
 			};
-			await axios.post(`http://localhost:8888/addItemToSale`, jsonToSend);
+			await axios.post(`http://localhost:5000/addItemToSale`, jsonToSend);
 		}
 		setValidated(true);
 	};
@@ -69,7 +69,7 @@ export default function Admin() {
 				image: itemImage,
 				description: itemDescription,
 			};
-			await axios.post(`http://localhost:8888/editItem/${editItemId}`, jsonToSend);
+			await axios.post(`http://localhost:5000/editItem/${editItemId}`, jsonToSend);
 		}
 		setValidated(true);
 	};

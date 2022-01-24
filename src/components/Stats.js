@@ -4,15 +4,13 @@ import { useState, useEffect } from "react";
 
 export default function Stats() {
     const [soledItems, setSoledItems] = useState([]);
-    
 
     useEffect(() => { 
         fetchSoledItems();
     }, []);
 
     const fetchSoledItems = async () => {
-        let data = await axios.get("http://localhost:8888/bringAllSoledItems");
-        console.log(data.data);
+        let data = await axios.get("http://localhost:5000/bringAllSoledItems");
         setSoledItems(parseDataForTop5MostFreq(data.data));
     }
 
