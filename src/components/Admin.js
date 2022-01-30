@@ -31,12 +31,12 @@ export default function Admin() {
 	}, []);
 
 	const fetchItems = async () => {
-		let data = await axios.get("http://localhost:5000/bringAllProductsToSale");
+		let data = await axios.get("https://mernstoreappdemo.herokuapp.com/bringAllProductsToSale");
 		setItemsToSales(data.data);
 	};
 
 	const handleRemoveItem = async (id) => {
-		await axios.delete(`http://localhost:5000/deleteItemFromSale/${id}`);
+		await axios.delete(`https://mernstoreappdemo.herokuapp.com/${id}`);
 		fetchItems();
 	};
 
@@ -52,7 +52,7 @@ export default function Admin() {
 				image: itemImage,
 				description: itemDescription,
 			};
-			await axios.post(`http://localhost:5000/addItemToSale`, jsonToSend);
+			await axios.post(`https://mernstoreappdemo.herokuapp.com/addItemToSale`, jsonToSend);
 		}
 		setValidated(true);
 	};
@@ -69,7 +69,7 @@ export default function Admin() {
 				image: itemImage,
 				description: itemDescription,
 			};
-			await axios.post(`http://localhost:5000/editItem/${editItemId}`, jsonToSend);
+			await axios.post(`https://mernstoreappdemo.herokuapp.com/${editItemId}`, jsonToSend);
 		}
 		setValidated(true);
 	};
