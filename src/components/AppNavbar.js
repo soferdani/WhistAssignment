@@ -1,5 +1,6 @@
 import { Container, Navbar, Nav } from "react-bootstrap";
 
+
 export default function AppNavbar() {
 	return (
 		<>
