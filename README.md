@@ -2,8 +2,7 @@
 
 ## Description
 
-An ecommerce store built with MERN stack.
-
+An ecommerce store built with MERN stack. 
 
 * features:
   * Node provides the backend environment for this application
@@ -11,4 +10,5 @@ An ecommerce store built with MERN stack.
   * Mongoose schemas to model the application data
   * React for displaying UI components
 
-## Demo will be publish soon 
+### Demo will be publish soon 
+### Press [here](https://github.com/soferdani/whistassignmentBack) to go to the backend repo 
