@@ -89,6 +89,7 @@ export default function Admin() {
 			<div className='button-container'>
 				<Button onClick={handelShowNewAdd}>Add</Button>
 			</div>
+			<br />
 			<div className='table'>
 				<Table striped bordered hover size='m'>
 					<thead>

@@ -53,15 +53,6 @@ export default function Stats() {
 				</Card>
 				<Card style={{ width: "18rem" }}>
 					<Card.Body>
-						<Card.Title>Top 5 unique sel</Card.Title>
-						<Card.Text>
-                        Display the top 5 Unique sold products. i.e if a shopping cart contained more than one of
-the same product, count as one
-						</Card.Text>
-					</Card.Body>
-				</Card>
-				<Card style={{ width: "18rem" }}>
-					<Card.Body>
 						<Card.Title>Past 5 days $</Card.Title>
 						<Card.Text>
                         Display the sales on a daily basis for the past 5 days
