@@ -187,6 +187,7 @@ export default function Admin() {
 							onClick={handleCloseEdit}
 							style={{ marginRight: "15px" }}
 						>
+							
 							Close
 						</Button>
 						<Button variant='primary' type='submit'>
