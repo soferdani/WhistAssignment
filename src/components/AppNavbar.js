@@ -4,6 +4,8 @@ import { Container, Navbar, Nav } from "react-bootstrap";
 export default function AppNavbar() {
 	return (
 		<>
+
+			
 			<Navbar bg='primary' variant='dark'>
 				<Container>
 					<Navbar.Brand href='/home'>Store</Navbar.Brand>
