@@ -39,7 +39,7 @@ export default function Stats() {
 			<Row lg={{ cols: 4 }} sm={{ cols: 2 }} xs={{ cols: 1 }}>
 				<Card style={{ width: "18rem" }}>
 					<Card.Body>
-						<Card.Title>Top 5 sel</Card.Title>
+						<Card.Title>Top 5 sales</Card.Title>
 						<Card.Text>
                             {soledItems?.map((item,index) => {
                                 return (
